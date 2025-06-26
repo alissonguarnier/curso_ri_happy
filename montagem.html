@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    
+  <h2> Menu: </h2>
+  <ul>
+    <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
+    <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
+    <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
+  </ul>
+
+<form method="get">
+
+  <h1>Monte seu carro</h1>
+
+    <p>Eschola o modelo:</p>
+    <input type="radio" name="modelo"> Argo <br>
+    <input type="radio" name="modelo"> Pulse <br>
+    <input type="radio" name="modelo"> Mobi <br>
+
+  <p>Escolha a cor:</p>
+    <input type="radio" name="cor"> Branco <br>
+    <input type="radio" name="cor"> Preto <br>
+    <input type="radio" name="cor"> Prata <br>
+    <input type="radio" name="cor"> vermelho <br>
+
+    <p>Escolha os adicionais:</p>
+    <input type="checkbox" name="adicional[]" value="multimidia"> Multimidia <br>
+    <input type="checkbox" name="adicional[]" value="vidro_eletrico"> Vidros elétricos <br>
+    <input type="checkbox" name="adicional[]" value="alarme"> Alarme <br>
+    <input type="checkbox" name="adicional[]" value="Banco de couro"> Banco de couro <br>
+    <input type="checkbox" disabled name="adicional[]" value="Engate"> Engate <br>
+    <input type="checkbox" name="adicional[]" value="Restrovisor_eletrico"> Retovisor Elétrico <br>
+
+    <!-- o sinal "[]" fala que é uma lista, assim não sbstitui o valor anterior. -->
+
+    <p>Rodas:</p>
+    <input type="checkbox" name="" value="calota"> Calota na roda <br>
+    <input type="checkbox" name="" value="Rodas_ferro"> Rodas de ferro <br>
+
+    <p>Entregar o carro em casa? </p>
+    <input type="radio" name="entrega" value="sim"> Sim
+    <input type="radio" name="entrega" value="não"> Não <br>
+
+    <button>Enviar</button>
+</form>
+
+</body>
+
+</html>
