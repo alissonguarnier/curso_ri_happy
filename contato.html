@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>Contato</title>
+</head>
+
+<body>
+
+  <h2> Menu: </h2>
+  <ul>
+    <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
+    <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
+    <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
+  </ul>
+
+<form name="contact" method="post" autocomplete="off" onsubmit="alert('formulario enviado')"; target="_blank" action="#">
+  <strong>
+    Digite seu <i>nome: </i>
+  </strong>
+  <!-- id => JS, style => CSS -->
+  <input class="caixaDeTexto" id="nome" type="text" title="Digite aqui o seu nome" name="nome"/>
+  <b>Quantos</b> <i>carros</i> serão:
+  <input type="number" title="digite aqui quantos carros deseja" name="quantidade"/>
+  <strong> Qual a <i>cor</i> do carro? </strong>
+  <input type="color" title="escolha a cor do carro" name="color"/>
+  <Strong> Deseja incluir a <i>central multimídia? </i></Strong>
+  <input type="checkbox" name="multimidia">
+  <b>Digite sua senha: </b>
+  <input type="password" title="Digite sua senha" name="senha">
+
+  <button type="submit" style="color:rgb(0, 38, 255);" title="Clique aqui para enviar">Enviar</button>
+</form>
+ 
+</body>
+
+</html>
