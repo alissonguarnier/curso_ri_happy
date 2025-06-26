@@ -13,7 +13,7 @@
     <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
   </ul>
 
-<form method="get">
+<form method="get" onsubmit="alert('Enviado com sucesso')">
 
   <h1>Monte seu carro</h1>
 
@@ -46,7 +46,9 @@
     <input type="radio" name="entrega" value="sim"> Sim
     <input type="radio" name="entrega" value="não"> Não <br>
 
-    <button>Enviar</button>
+    <button type="reset">Limpar</button> <br>
+
+    <button type="submit" onclick="alert('alerta de clique')">Enviar</button>
 </form>
 
 </body>
