@@ -17,18 +17,18 @@
 
   <h1>Monte seu carro</h1>
 
-    <p>Eschola o modelo:</p>
+    <label><p>Eschola o modelo:</p></label>
     <input type="radio" name="modelo"> Argo <br>
     <input type="radio" name="modelo"> Pulse <br>
     <input type="radio" name="modelo"> Mobi <br>
 
-  <p>Escolha a cor:</p>
+    <label><p>Escolha a cor:</p></label>
     <input type="radio" name="cor"> Branco <br>
     <input type="radio" name="cor"> Preto <br>
     <input type="radio" name="cor"> Prata <br>
     <input type="radio" name="cor"> vermelho <br>
 
-    <p>Escolha os adicionais:</p>
+    <label><p>Escolha os adicionais:</p></label>
     <input type="checkbox" name="adicional[]" value="multimidia"> Multimidia <br>
     <input type="checkbox" name="adicional[]" value="vidro_eletrico"> Vidros elétricos <br>
     <input type="checkbox" name="adicional[]" value="alarme"> Alarme <br>
@@ -38,13 +38,37 @@
 
     <!-- o sinal "[]" fala que é uma lista, assim não sbstitui o valor anterior. -->
 
-    <p>Rodas:</p>
+    <label><p>Rodas:</p></label>
     <input type="checkbox" name="" value="calota"> Calota na roda <br>
     <input type="checkbox" name="" value="Rodas_ferro"> Rodas de ferro <br>
 
-    <p>Entregar o carro em casa? </p>
+    <label><p>Entregar o carro em casa? </p></label>
     <input type="radio" name="entrega" value="sim"> Sim
     <input type="radio" name="entrega" value="não"> Não <br>
+
+    <label><p>Versão:</p></label>
+    <select name="seleção">
+      <option value="Trial">Trial</option>
+      <option value="Sport">Sport</option>
+      <option value="Basic">Basic</option>
+      <option value="null" selected>Selecione a versão desejada</option>
+      <!-- Selected irá aparecer primeiro -->
+    </select><br>
+
+    <label><p>Acessórios extras:</p></label>
+    <select multiple name="extras">
+      <option value="pelicula">Peliculas nos vidros</option>
+      <option value="Farol_led">Farol de led</option>
+      <option value="Lift">Lift na suspensão</option>
+    </select><br>
+
+    <p>Clique para limpar ou enviar:</p>
+
+    <label><p>Nome do atendente:</p></label>
+    <input type="text" name="atendente">
+
+    <label><p>Observações do atendimento:</p></label>
+    <textarea name="observacao" rows="10" cols="40">Escreva a aqui</textarea><br>
 
     <button type="reset">Limpar</button> <br>
 
