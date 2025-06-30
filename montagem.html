@@ -5,75 +5,79 @@
 </head>
 
 <body>
-    
-  <h2> Menu: </h2>
-  <ul>
-    <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
-    <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
-    <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
-  </ul>
+ 
+  <nav>
+    <h2> Menu: </h2>
+    <ul>
+      <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
+      <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
+      <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
+    </ul>
+  </nav>
 
-<form method="get" onsubmit="alert('Enviado com sucesso')">
+  <main>
+    <form method="get" onsubmit="alert('Enviado com sucesso')">
 
-  <h1>Monte seu carro</h1>
+      <h1>Monte seu carro</h1>
 
-    <label><p>Eschola o modelo:</p></label>
-    <input type="radio" name="modelo"> Argo <br>
-    <input type="radio" name="modelo"> Pulse <br>
-    <input type="radio" name="modelo"> Mobi <br>
+        <label><p>Eschola o modelo:</p></label>
+        <input type="radio" name="modelo"> Argo <br>
+        <input type="radio" name="modelo"> Pulse <br>
+        <input type="radio" name="modelo"> Mobi <br>
 
-    <label><p>Escolha a cor:</p></label>
-    <input type="radio" name="cor"> Branco <br>
-    <input type="radio" name="cor"> Preto <br>
-    <input type="radio" name="cor"> Prata <br>
-    <input type="radio" name="cor"> vermelho <br>
+        <label><p>Escolha a cor:</p></label>
+        <input type="radio" name="cor"> Branco <br>
+        <input type="radio" name="cor"> Preto <br>
+        <input type="radio" name="cor"> Prata <br>
+        <input type="radio" name="cor"> vermelho <br>
 
-    <label><p>Escolha os adicionais:</p></label>
-    <input type="checkbox" name="adicional[]" value="multimidia"> Multimidia <br>
-    <input type="checkbox" name="adicional[]" value="vidro_eletrico"> Vidros elétricos <br>
-    <input type="checkbox" name="adicional[]" value="alarme"> Alarme <br>
-    <input type="checkbox" name="adicional[]" value="Banco de couro"> Banco de couro <br>
-    <input type="checkbox" disabled name="adicional[]" value="Engate"> Engate <br>
-    <input type="checkbox" name="adicional[]" value="Restrovisor_eletrico"> Retovisor Elétrico <br>
+        <label><p>Escolha os adicionais:</p></label>
+        <input type="checkbox" name="adicional[]" value="multimidia"> Multimidia <br>
+        <input type="checkbox" name="adicional[]" value="vidro_eletrico"> Vidros elétricos <br>
+        <input type="checkbox" name="adicional[]" value="alarme"> Alarme <br>
+        <input type="checkbox" name="adicional[]" value="Banco de couro"> Banco de couro <br>
+        <input type="checkbox" disabled name="adicional[]" value="Engate"> Engate <br>
+        <input type="checkbox" name="adicional[]" value="Restrovisor_eletrico"> Retovisor Elétrico <br>
 
-    <!-- o sinal "[]" fala que é uma lista, assim não sbstitui o valor anterior. -->
+        <!-- o sinal "[]" fala que é uma lista, assim não sbstitui o valor anterior. -->
 
-    <label><p>Rodas:</p></label>
-    <input type="checkbox" name="" value="calota"> Calota na roda <br>
-    <input type="checkbox" name="" value="Rodas_ferro"> Rodas de ferro <br>
+        <label><p>Rodas:</p></label>
+        <input type="checkbox" name="" value="calota"> Calota na roda <br>
+        <input type="checkbox" name="" value="Rodas_ferro"> Rodas de ferro <br>
 
-    <label><p>Entregar o carro em casa? </p></label>
-    <input type="radio" name="entrega" value="sim"> Sim
-    <input type="radio" name="entrega" value="não"> Não <br>
+        <label><p>Entregar o carro em casa? </p></label>
+        <input type="radio" name="entrega" value="sim"> Sim
+        <input type="radio" name="entrega" value="não"> Não <br>
 
-    <label><p>Versão:</p></label>
-    <select name="seleção">
-      <option value="Trial">Trial</option>
-      <option value="Sport">Sport</option>
-      <option value="Basic">Basic</option>
-      <option value="null" selected>Selecione a versão desejada</option>
-      <!-- Selected irá aparecer primeiro -->
-    </select><br>
+        <label><p>Versão:</p></label>
+        <select name="seleção">
+          <option value="Trial">Trial</option>
+          <option value="Sport">Sport</option>
+          <option value="Basic">Basic</option>
+          <option value="null" selected>Selecione a versão desejada</option>
+          <!-- Selected irá aparecer primeiro -->
+        </select><br>
 
-    <label><p>Acessórios extras:</p></label>
-    <select multiple name="extras">
-      <option value="pelicula">Peliculas nos vidros</option>
-      <option value="Farol_led">Farol de led</option>
-      <option value="Lift">Lift na suspensão</option>
-    </select><br>
+        <label><p>Acessórios extras:</p></label>
+        <select multiple name="extras">
+          <option value="pelicula">Peliculas nos vidros</option>
+          <option value="Farol_led">Farol de led</option>
+          <option value="Lift">Lift na suspensão</option>
+        </select><br>
 
-    <p>Clique para limpar ou enviar:</p>
+        <p>Clique para limpar ou enviar:</p>
 
-    <label><p>Nome do atendente:</p></label>
-    <input type="text" name="atendente">
+        <label><p>Nome do atendente:</p></label>
+        <input type="text" name="atendente">
 
-    <label><p>Observações do atendimento:</p></label>
-    <textarea name="observacao" rows="10" cols="40">Escreva a aqui</textarea><br>
+        <label><p>Observações do atendimento:</p></label>
+        <textarea name="observacao" rows="10" cols="40">Escreva a aqui</textarea><br>
 
-    <button type="reset">Limpar</button> <br>
+        <button type="reset">Limpar</button> <br>
 
-    <button type="submit" onclick="alert('alerta de clique')">Enviar</button>
-</form>
+        <button type="submit" onclick="alert('alerta de clique')">Enviar</button>
+    </form>
+  </main>
 
 </body>
 
