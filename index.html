@@ -6,6 +6,17 @@
     .imagem {
       border-radius: 80px;
     }
+    .anexos{
+      background-color:azure;
+      border:solid 1 black;
+      border-radius: 15px;
+    }
+    article time{
+      font-style: italic;
+    }
+    article p q{
+      font-style: italic;
+    }
   </style>
 </head>
 
@@ -25,29 +36,41 @@
 
   <main>
     <div class="textPage1">
-      <h1> Essa é uma página de teste: Lorem Ipsum</h1>
+      <article>
 
-      <ol>
-        <li>
-          <h2> Agora utilizando um h2 para ver a diferença </h2>
-        </li>
-        <li>
-          <h3> Agora utilizando um h3 para ver a diferença </h3>
-        </li>
-        <li>
-          <h4> Agora utilizando um h4 para ver a diferença </h4>
-        </li>
-        <li>
-          <h5> Agora utilizando um h5 para ver a <u>diferença</u> </h5>
-        </li>
-        <li>
-          <h6> Agora utilizando um h6 para ver a <strong>diferença</strong></h6>
-        </li>
-      </ol>
-      <ul>
-        <li> este é um subitem 1</li>
-        <li> esté é um subitem 2</li>
-      </ul>
+        <article>
+          <h1> Essa é uma página de teste: Lorem Ipsum</h1>
+
+          <ol>
+            <li>
+              <h2> Agora utilizando um h2 para ver a diferença </h2>
+            </li>
+            <li>
+              <h3> Agora utilizando um h3 para ver a diferença </h3>
+            </li>
+            <li>
+              <h4> Agora utilizando um h4 para ver a diferença </h4>
+            </li>
+            <li>
+              <h5> Agora utilizando um h5 para ver a <u>diferença</u> </h5>
+            </li>
+            <li>
+              <h6> Agora utilizando um h6 para ver a <strong>diferença</strong></h6>
+            </li>
+          </ol>
+          <blockquote cite="https://dio.com"><p>Uma observação importante é o uso do article dentro de outro article para ver a semantica do html</p></blockquote>
+          <!-- "cite é uma citação invisivel" -->
+        </article>
+
+        <article>      
+          <ul>
+          <li> este é um subitem 1</li>
+          <li> esté é um subitem 2</li>
+          </ul>
+          <p>Agora vamos mostrar como usar a tag "q" para usar uma citação de mim mesmo: <q>Esse é um primeiro site que eu fiz</q></p>
+        </article>
+        Artigo publicado em <time pubdate>30/06/2025 17:40</time>
+      </article>
 
       <!-- ol é um lista ordenada, ul é uma lista não ordenada. -->
     </div>
@@ -61,16 +84,18 @@
       </ul>
     </div>
 
-    <div class="carros">
+    <section class="carros">
       <h2><strong>Selecione seu carro:</strong></h2>
 
       <a href="montagem.html" title="Clique aqui para montar seu Mobi"><img class="imagem" width="300" src="https://cdn.motor1.com/images/mgl/AkB8vL/s3/fiat-mobi-2023.jpg"></a>
 
       <p>Gostaria de montar seu carro? Se sim: <a href="montagem.html">Clique aqui</a></p>
 
-    </div>
+    </section>
+    <!-- Section é uma seção importante principalmente paras as buscas de tópicos. -->
 
-    <div class="anexos">
+    <aside>
+      <div class="anexos">
       <h1>Exemplo de vídeo:</h1>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/8QEFnPZ8Gpg?si=tW9sKTG46ciAh87r"
         title="YouTube video player" frameborder="0"
@@ -80,16 +105,19 @@
       <h2>Exemplo de mapa:</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15352.145901036116!2d-48.07961583137516!3d-15.854680146367306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a32afe9a0b843%3A0x5f50d8393db6d948!2sImperial%20Plaza%20Hotel!5e0!3m2!1spt-BR!2sbr!4v1751243739905!5m2!1spt-BR!2sbr"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    </div>
+      </div>
+    </aside>
+    <!-- asside é parte da página que não é importante nem tem nada haver com o tema da página. -->
+    
   </main>
 
   <footer>
-
-    <strong>Site criado por Alisson Guarniêr</strong>
-
+    <div class="rodape">
+        <strong>Site criado por Alisson Guarniêr</strong>
+        <address>Endereço: Brasília-DF, Rua 401</address>
+    </div>
   </footer>
 
 </body>

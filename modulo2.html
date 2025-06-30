@@ -1,76 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt>
-<head>
+<head lang="pt">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilha HTML</title>
 
-<style>
-        span{
-        color: rgba(255, 2, 31, 0.637); font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large ;
-    }
-        menu-lateral{
-            color: rgb(184, 21, 21);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    <style>
+            span{
+            color: rgba(255, 2, 31, 0.637); font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: xx-large ;
         }
-        .titlepage{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: black;
-        }
+            menu-lateral{
+                color: rgb(184, 21, 21);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .titlepage{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: black;
+            }
+            .bodyPage{
+                background-color: azure;
+            }
 
-</style>
+    </style>
 
 </head>
-<body>
 
-<header>
+<body class="bodyPage">
 
-    <div class="logo">
-        <img src="https://pngimg.com/uploads/shekel/shekel_PNG12.png" width="50px" height="50px">
-    </div>
-    <div class="titlepage">
-        <h1>Página com exemplos HTML</h1>
-    </div>
+    <header>
 
-</header>
-
-<nav>
-
-    <div id="menu-lateral">
-        <div id="links">
-            <ul>
-            <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
-            <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
-            <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
-            <li><a href="modulo2.html" title="Clique para navegar no menu">Trabalhe Conosco</a></li>
-            </ul>
+        <div class="logo">
+            <img src="https://pngimg.com/uploads/shekel/shekel_PNG12.png" width="50px" height="50px">
         </div>
+        <div class="titlepage">
+            <h1>Página com exemplos HTML</h1>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <div id="menu-lateral">
+            <div id="links">
+                <ul>
+                <li><a href="index.html" title="Clique para navegar no menu">Home</a></li>
+                <li><a href="about.html" title="Clique para navegar no menu">Sobre</a></li>
+                <li><a href="contato.html" title="Clique para navegar no menu">Contato</a></li>
+                <li><a href="modulo2.html" title="Clique para navegar no menu">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <main>
+
+
+        <div class="textoPage">
+            <font color="blue" face="Arial"><b>Programe</b></font> <i>seu futuro</i> <mark>global</mark> <u>agora!</u><sup>*</sup><br>
+            <strong>Programe</strong> <i>seu futuro</i> <mark>global</mark> <u>agora!</u><sup>*</sup><br>
+            10<sup>2</sup><br>
+            10<sub>2</sub>
+            <blockquote>Isto é uma <span>citação</span> e um texto genérico para mostrar como fica no html</blockquote>
+        </div>
+        <div class="trabalheConosco">
+            <iframe src="trabalhe.html" width="800px" height="600px">
+            </iframe>
+        </div>
+
+    </main>
+
+    <footer>
+    <div class="rodape">
+        <strong>Site criado por Alisson Guarniêr</strong>
+        <address>Endereço: Brasília-DF, Rua 401</address>
     </div>
-
-</nav>
-
-<main>
-
-
-    <div class="textoPage">
-        <font color="blue" face="Arial"><b>Programe</b></font> <i>seu futuro</i> <mark>global</mark> <u>agora!</u><sup>*</sup><br>
-        <strong>Programe</strong> <i>seu futuro</i> <mark>global</mark> <u>agora!</u><sup>*</sup><br>
-        10<sup>2</sup><br>
-        10<sub>2</sub>
-        <blockquote>Isto é uma <span>citação</span> e um texto genérico para mostrar como fica no html</blockquote>
-    </div>
-    <div class="trabalheConosco">
-        <iframe src="trabalhe.html" width="800px" height="600px">
-        </iframe>
-    </div>
-
-</main>
-
-<footer>
-
-    <strong>Site criado por Alisson Guarniêr</strong>
-
-</footer>
-   
+    </footer>
+    
 
 </body>
 

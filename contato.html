@@ -2,6 +2,46 @@
 
 <head>
   <title>Contato</title>
+  <style>
+    nav ul {
+      display: flex;
+      list-style:none;
+      padding-inline-start: 5px;
+    }
+    nav ul li a{
+      margin: 5px;
+      padding: 10px;
+      color: blue;
+      text-decoration: none;
+      border: solid 1px rgb(6, 1, 68);
+      border-radius: 15px;
+      background-color: rgb(216, 255, 255);
+    }
+
+    nav ul li a:hover{
+      background-color: #0026ff;
+      color: aliceblue;
+      font-size: larger;
+      padding: 15px;
+    }
+    form{
+      margin-top: 20px;
+    }
+    form label{
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    .formIndiv{
+      margin: 8px;
+    }
+    .rodape{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: rgb(223, 255, 255);
+      text-align: center;
+
+    }
+  </style>
 </head>
 
 <body>
@@ -17,69 +57,100 @@
   </nav>
 
   <main>
-    <form name="contact" method="post" autocomplete="off" onsubmit="alert('formulario enviado')" ; target="_blank"
-      action="#">
-      <label><strong> Digite seu <i>nome: </i></strong></label>
-      <input class="caixaDeTexto" id="nome" type="text" title="Digite aqui o seu nome" name="nome" />
-      <br>
+    <form name="contact" method="post" autocomplete="off" onsubmit="alert('formulario enviado')"; target="_blank" action="#">
+      
+      <div class="formIndiv">
+        <label><strong> Digite seu <i>nome: </i></strong></label>
+        <input class="caixaDeTexto" id="nome" type="text" title="Digite aqui o seu nome" name="nome" />
+        <br>
+      </div>
 
-      <label><b>Quantos</b> <i>carros</i> serão:</label>
-      <input type="number" title="digite aqui quantos carros deseja" name="quantidade" min="2" max="10" step="2" />
-      <br>
+      <div class="formIndiv">
+        <label><b>Quantos</b> <i>carros</i> serão:</label>
+        <input type="number" title="digite aqui quantos carros deseja" name="quantidade" min="2" max="10" step="2" />
+        <br>
+      </div>
 
-      <label><strong> Qual a <i>cor</i> do carro? </strong></label>
-      <input type="color" title="escolha a cor do carro" name="color" />
-      <br>
+      <div class="formIndiv">
+        <label><strong> Qual a <i>cor</i> do carro? </strong></label>
+        <input type="color" title="escolha a cor do carro" name="color" />
+        <br>
+      </div>
 
-      <label><Strong> Deseja incluir a <i>central multimídia? </i></Strong></label>
-      <input type="checkbox" name="multimidia">
-      <br>
+      <div class="formIndiv">
+        <label><Strong> Deseja incluir a <i>central multimídia? </i></Strong></label>
+        <input type="checkbox" name="multimidia">
+        <br>
+      </div>
 
-      <label><b>Digite sua senha: </b></label>
-      <input type="password" title="Digite sua senha" name="senha">
-      <br>
+      <div class="formIndiv">
+        <label><b>Digite sua senha: </b></label>
+        <input type="password" title="Digite sua senha" name="senha">
+        <br>
+      </div>
 
-      <label><b>Escolha o aro da roda</b></label>
-      <input type="range" title="escolha o tamanho do aro" name="aro" min="15" max="20" value="17">
-      <br>
+      <div class="formIndiv">
+        <label><b>Escolha o aro da roda</b></label>
+        <input type="range" title="escolha o tamanho do aro" name="aro" min="15" max="20" value="17">
+        <br>
+      </div>
 
-      <label><b>Digite seu e-mail:</b></label>
-      <input type="email" title="digite um e-mail válido" name="email">
-      <br>
+      <div class="formIndiv">  
+        <label><b>Digite seu e-mail:</b></label>
+        <input type="email" title="digite um e-mail válido" name="email">
+        <br>
+      </div>
 
-      <label><b>Link do linkedin</b></label>
-      <input type="url" title="Coloque o link completo do linkedin" name="linkedin">
-      <br>
+      <div class="formIndiv">
+        <label><b>Link do linkedin</b></label>
+        <input type="url" title="Coloque o link completo do linkedin" name="linkedin">
+        <br>
+      </div>
 
-      <label><b>Data de nascimento: </b></label>
-      <input type="date" title="Coloque o dia que nasceu" name="data_nascimento">
-      <br>
+      <div class="formIndiv">    
+        <label><b>Data de nascimento: </b></label>
+        <input type="date" title="Coloque o dia que nasceu" name="data_nascimento">
+        <br>
+      </div>
 
-      <label><b>Deseja que a gente envie novidades? </b></label>
-      Sim <input type="radio" title="Sim, aceito" name="aceita_novidades"> ou não <input type="radio" title="Não aceito"
-        name="aceita_novidades">
-      <br>
+      <div class="formIndiv">
+        <label><b>Deseja que a gente envie novidades? </b></label>
+        Sim <input type="radio" title="Sim, aceito" name="aceita_novidades"> ou não <input type="radio" title="Não aceito"
+          name="aceita_novidades">
+        <br>
+      </div>
+       
+      <div class="formIndiv">
+        <label><b>Tag invisivel:</b></label>
+        <input type="hidden" />
+        <br>
+      </div>
+      
+      <div class="formIndiv">
+        <label><b>Envie os arquivos</b></label>
+        <input type="file" multiple />
+        <br>
+      </div>
+     
+      <div class="formIndiv">
+        <label><b>Busca no site</b></label>
+        <input type="search" />
+        <br>
+      </div>
+      
+      <div class="formIndiv">
+        <button type="submit" style="color:#0026ff;" title="Clique aqui para enviar">Enviar</button>
+      </div>
 
-      <label><b>Tag invisivel:</b></label>
-      <input type="hidden" />
-      <br>
-
-      <label><b>Envie os arquivos</b></label>
-      <input type="file" multiple />
-      <br>
-
-      <label><b>Busca no site</b></label>
-      <input type="search" />
-      <br>
-
-      <button type="submit" style="color:#0026ff;" title="Clique aqui para enviar">Enviar</button>
     </form>
   </main>
 
   <footer>
-
-    <strong>Site criado por Alisson Guarniêr</strong>
-
+    <div class="rodape">
+        <strong>Site criado por Alisson Guarniêr</strong>
+        <address>Endereço: Brasília-DF, Rua 401</address>
+        <a class="telRodape" href="tel:+5561999356975" title="Clique aqui para abrir o telefone">Telefone para contato</a>
+    </div>
   </footer>
 
 </body>
