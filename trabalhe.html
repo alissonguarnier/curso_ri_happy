@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalhe Conosco</title>
+  <style>
+    .row {
+      font-size: larger;
+      font-style: italic;
+      margin: 5px;
+    }
+
+    label {
+      width: 100px;
+      text-align: right;
+      display: inline-block;
+      padding-right: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    fieldset {
+      margin: 10px;
+      border-radius: 15px;
+      border-color: rgb(212, 33, 33);
+      background-color: rgb(241, 241, 241);
+    }
+
+    h1 {
+      font-style: oblique;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+  </style>
+</head>
+
+
+
+<body>
+
+  <div>
+    <h1><b>Trabalhe Conosco</b></h1>
+  </div>
+
+  <form method="get" onsubmit="alert('Enviado com sucesso')">
+    <fieldset>
+      <legend>Dados pessoais</legend>
+      <div class="row">
+        <label>Nome:</label><input name="nome" type="text">
+        <label>Data de nascimento:</label><input name="nascimento" type="date">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados para contato</legend>
+      <div class="row">
+        <label>Telefone:</label><input name="nome" type="text">
+        <label>E-mail:</label><input name="email" type="text">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Experiências</legend>
+      <div class="row">
+        <label>
+          <p>Últimos trabalhos:</p>
+        </label>
+        <textarea name="observacao" rows="10" cols="80">Escreva a aqui</textarea>
+    </fieldset>
+
+    <button type="reset">Limpar</button>
+    <button type="submit">Enviar</button>
+
+  </form>
+
+</body>
+
+</html>
