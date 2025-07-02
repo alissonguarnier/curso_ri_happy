@@ -1,7 +1,11 @@
 <html>
 
 <head>
-  <title>Site principal</title>
+  <title>FIAT | Oferta 15% nesse mês!</title>
+  <!-- Um titulo que irá aparecer na busca do google, pode ter até 60 caracteres (letras) -->
+
+  <meta name="description" content="aqui vai uma descrição da minha pagina que aparecerá abaixo do title no google" />
+
   <style>
     .imagem {
       border-radius: 80px;
@@ -85,14 +89,21 @@
     </div>
 
     <section class="carros">
-      <h2><strong>Selecione seu carro:</strong></h2>
+        <h2><strong>Selecione seu carro:</strong></h2>
+          <figure>
+          <a href="montagem.html" title="Clique aqui para montar seu Mobi"><img class="imagem" width="300" src="https://cdn.motor1.com/images/mgl/AkB8vL/s3/fiat-mobi-2023.jpg"></a>
 
-      <a href="montagem.html" title="Clique aqui para montar seu Mobi"><img class="imagem" width="300" src="https://cdn.motor1.com/images/mgl/AkB8vL/s3/fiat-mobi-2023.jpg"></a>
-
-      <p>Gostaria de montar seu carro? Se sim: <a href="montagem.html">Clique aqui</a></p>
-
+          <figcaption>Gostaria de montar seu carro? Se sim: <a href="montagem.html">Clique aqui</a> ou na imagem acima</figcaption>
+          </figure>
+          <!-- Figure serve para criar um "diagrama", formando algo estrutual como um container (ex: Foto e descrição juntos). De forma semantica, eu explico que isso tudo pertence a mídia anexada -->
     </section>
     <!-- Section é uma seção importante principalmente paras as buscas de tópicos. -->
+
+    <picture>
+      <source srcset="teste.png" media="(min-width: 600px)" alt="Essa é uma imagem do cartão" width="550px" height="550px">
+      <img src="fundo.png" alt="Essa é uma imagem da logo" width="250px" height="250px"/>
+    </picture>
+    <!-- O picture coloca várias versões da imagem dependendo do tamanho da tela do dispositivo. -->
 
     <aside>
       <div class="anexos">
