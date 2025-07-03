@@ -1,0 +1,40 @@
+h1{
+color: orange;
+border: solid 1px currentColor;
+/* usa a mesma cor do última propriedade. */
+}
+
+#img-exemplo1{
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+
+#img-exemplo2{
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    object-fit:cover;
+}
+
+#img-exemplo3{
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    object-fit:fill;
+}
+
+#img-exemplo4{
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    object-fit:none
+}
+
+#img-exemplo5{
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    object-fit:scale-down
+}

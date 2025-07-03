@@ -4,3 +4,7 @@ h2 {
   padding-left: 15px;
   color: brown;
 }
+
+#rgb{
+  color: RGB(red, green, blue);
+}

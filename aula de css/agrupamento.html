@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de seletores</title>
+    <style>
+        h1, p, div, .teste, #lin-referencia {
+            color: red;
+        }
+        /* colocar a tag e a classe sem espaço entre eles, irá especificar qual tag e qual classe ou id que irá pegar o css. */
+        p.texto{
+            background-color: aquamarine;
+        }
+        a#botao-voltar{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de seletores</h1>
+    <p class="texto">Podemos aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separa os seletores utiizando uma vírgula (,)</p>
+    <div>Assim, não precisamos ficar copiando e colando os mesmos código para todos, nós podemos fazer um só bloco de css e reutilizas as mesmas regras!</div>
+
+    <br><br>
+    <a id="lin-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="./index.html">Voltar</a>
+    <br><br>
+    <button class="teste" id="botao-fechar">Fechar Página</button>
+
+</body>
+</html>

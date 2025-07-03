@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* irmão logo em seguida */
+        div + p{
+            background-color: lightgreen;
+        }
+        /* todos os irmãos da tag */
+        div ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        1
+        <p>A</p>
+        <p>B</p>
+        <span>
+            <p>C</p>
+        </span>
+    </div>
+
+    <p>Paragrafo1</p>
+    <p>Paragrafo2</p>
+</body>
+</html>

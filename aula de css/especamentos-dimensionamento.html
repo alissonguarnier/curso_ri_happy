@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Margin:espaçamento por fora do elemento.
+        um valor: aplica para todos os lados.
+        Dois valores: em cima e embaixo.
+        Três valores: em cima, lados e embaixo.
+        Quatro valores: Cima, direita, baixo e esquerda.
+        
+        Margin-top
+        Margin-button (baixo)
+        Margin-left
+        Margin-right
+
+        pode ser valor positivo e negativo.
+        */
+
+        /* Padding: espaço dentro do elemento
+        */
+
+        /* width = largura + borda + padding */
+
+        body{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        button.t1{
+            background-color: lightblue;
+            width: 400px;
+            height: 400px;
+            padding: 20px;
+            box-sizing:content-box
+            /* define o limite que o elemento pode creser sendo border box o máximo é valor definido e content box é somar tudo. */
+        }
+        button.t2{
+            background-color: aquamarine;
+            width: initial;
+            /* initial = valor inicial padrão */
+        }
+        #div01{
+            margin: 20px 40px;
+        }
+        #div02{
+           color: red; 
+           background-color: lightblue;
+           width: 400px;
+           padding-left: 24px;
+           text-align: center;
+        }
+        #div03{
+            background-color: lightgreen;
+            width: inherit;
+            padding-left: inherit;
+            /* herda o mesmo número do "pai" */
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="div01">
+        Div 01
+        <a href="index.html"><button class="t1">Trilha de CSS Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam nostrum ab dolore maxime cumque modi impedit, blanditiis illo quis, mollitia ut sed eius vero alias assumenda inventore nihil iusto. Harum. </button></a>
+        <a href="sletores.html"><button class="t2">Trilha de css 2</button></a>
+    </div>
+   
+    <div id="div02">
+        Div 02
+        <div id="div03">Div 03</div>
+    </div>
+</body>
+</html>

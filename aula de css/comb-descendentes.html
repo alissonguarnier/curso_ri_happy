@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Combinadores: qual tipos de relação entre 2 seletores.
+        1. Combinador descendente (espaço)
+        2. Combinador filho (>)
+        4. Combinador irmão adjacente "ao lado"(+)
+        5. Combinador irmão em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR] */
+
+        li {
+            color: red;
+        }
+        /* filha */
+        li li {
+            color:rgb(238, 255, 0);
+        }
+        #lista01 li{
+            font-weight: bold;
+        }
+        .fundo-verde li{
+            background-color: green;
+        }
+        .fundo-verde #sublista01 li{
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista01">
+            <div>Item 1</div>
+            <ul id="sublista01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista02">
+            <div>Item 2</div>
+            <ul id="sublista02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+            
+        </li>
+        <li class="fundo-verde" id="lista03">
+            <div>Item 3</div>
+            <ul id="sublista03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
